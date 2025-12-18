@@ -1,0 +1,78 @@
+:root{
+	--bg:#0f1114;
+	--card:#121417;
+	--accent:#31d779;
+	--text:#e6eef0;
+	--muted:#b3bdc0;
+}
+
+*{box-sizing:border-box}
+
+body{
+	margin:0;
+	font-family:Arial,Helvetica,sans-serif;
+	background:#121212;
+	color:#e6e6e6;
+}
+
+header{
+    background:#31d779;
+    padding:32px 12px;
+    text-align:center;
+    color:#fff
+}
+
+main{
+    max-width:1200px;
+    width:100%;
+    margin:20px auto;
+    padding:0 12px;
+    display:flex;
+    flex-wrap:nowrap; /* keep cards on one line */
+    gap:20px; /* requested 20px gap */
+    align-items:flex-start;
+    justify-content:flex-start;
+    overflow-x:hidden; /* prevent horizontal scrolling */
+}
+
+section{
+    margin-top: 40px;
+    background:#181818;
+    padding:14px;
+    border-radius:6px;
+    border:1px solid #222;
+    box-shadow:0 6px 18px rgba(0,0,0,0.4);
+    flex:1 1 0; /* share available space equally, shrink as needed */
+    min-width:0; /* allow shrinking below content width */
+}
+
+h1{
+    margin:0;
+    font-size:1.6rem
+}
+
+h2{
+    margin:0 0 8px
+}
+
+ul{
+    margin:0;
+    padding-left:1.2rem
+}
+
+footer{
+    text-align:center;
+    padding:12px;
+    color:#bdbdbd
+}
+
+/* Ensure three cards fit on one line without horizontal scroll */
+main{
+    flex-wrap:nowrap !important;
+    overflow-x:hidden; /* prevent horizontal scrollbar */
+}
+section{
+    flex:0 0 calc((100% - 40px) / 3); /* three cards minus gaps */
+    max-width:calc((100% - 40px) / 3);
+    min-width:0;
+}

@@ -1,0 +1,16 @@
+/* Centers the canvas in the middle of the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    font-family: sans-serif;
+}
+
+canvas {
+    background-color: #ffffff;
+    border: 5px solid #bfff00;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

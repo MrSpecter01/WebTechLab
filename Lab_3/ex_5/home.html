@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_3 - ex_5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="workflow-container">
+    <div class="progress-wrapper">
+        <div id="progressBar"></div>
+    </div>
+
+    <form id="multiStepForm">
+        <div class="stage" id="stage1">
+            <h3>Step 1: Account Details</h3>
+            <label>Username</label>
+            <input type="text" id="user" placeholder="Minimum 5 chars">
+            <span class="error" id="err1"></span>
+        </div>
+
+        <div class="stage hidden" id="stage2">
+            <h3>Step 2: Personal Info</h3>
+            <label>Email</label>
+            <input type="email" id="mail" placeholder="valid@email.com">
+            <span class="error" id="err2"></span>
+        </div>
+
+        <div class="stage hidden" id="stage3">
+            <h3>Step 3: Occupation</h3>
+            <select id="job">
+                <option value="">Select Job...</option>
+                <option value="dev">Developer</option>
+                <option value="des">Designer</option>
+            </select>
+            <span class="error" id="err3"></span>
+        </div>
+
+        <div class="stage hidden" id="stage4">
+            <h3>Step 4: Confirm & Submit</h3>
+            <div id="summary"></div>
+        </div>
+
+        <div class="nav-buttons">
+            <button type="button" id="prevBtn" class="hidden">Previous</button>
+            <button type="button" id="nextBtn">Next</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

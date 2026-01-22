@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_3 - ex_2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="shop-container">
+        <h2>Gadget Store</h2>
+        <div class="product-list">
+            <button onclick="addItem('Laptop', 1000, 'Tech')">Add Laptop ($1000)</button>
+            <button onclick="addItem('Phone', 500, 'Tech')">Add Phone ($500)</button>
+            <button onclick="addItem('Book', 20, 'Education')">Add Book ($20)</button>
+        </div>
+
+        <div class="cart-section">
+            <h3>Your Cart</h3>
+            <ul id="cartItems">
+                </ul>
+
+            <div class="coupon-section">
+                <input type="text" id="couponInput" placeholder="Enter Coupon (e.g. SAVE10)">
+                <button onclick="applyCoupon()">Apply</button>
+            </div>
+
+            <div class="totals">
+                <p>Subtotal: $<span id="subtotal">0</span></p>
+                <p>Discount: -$<span id="discount">0</span></p>
+                <p><strong>Total: $<span id="totalPrice">0</span></strong></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

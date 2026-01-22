@@ -1,0 +1,76 @@
+body { 
+    font-family: sans-serif; 
+    background: #f0f2f5; 
+    display: flex; 
+    justify-content: center; 
+    padding-top: 50px; 
+}
+
+.workflow-container { 
+    background: white; 
+    padding: 30px; 
+    border-radius: 12px; 
+    width: 400px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+}
+
+.stage { 
+    margin-bottom: 20px; 
+}
+.hidden { 
+    display: none; 
+}
+
+/* Progress Bar Styling */
+.progress-wrapper { 
+    background: #eee; 
+    height: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 30px; 
+    overflow: hidden; 
+}
+
+#progressBar { 
+    background: #4caf50; 
+    height: 100%; 
+    width: 25%; 
+    transition: 0.3s; 
+}
+
+input, select { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.error { 
+    color: red; 
+    font-size: 12px; 
+    margin-top: 5px; 
+    display: block; 
+}
+
+.nav-buttons { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+button { 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    border: none; 
+}
+
+#nextBtn { 
+    background: #007bff; 
+    color: white; 
+}
+
+#prevBtn { 
+    background: #6c757d; 
+    color: white; 
+}

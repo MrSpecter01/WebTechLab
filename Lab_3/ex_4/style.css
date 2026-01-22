@@ -1,0 +1,73 @@
+body { 
+    font-family: 'Courier New', monospace; 
+    background: #121212; 
+    color: #00ff00; 
+    padding: 20px; 
+}
+
+.monitor-container { 
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.zone { 
+    background: #1e1e1e; 
+    padding: 20px; 
+    border: 2px dashed #333; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+}
+
+input { 
+    background: #333; 
+    color: white; 
+    border: 1px solid #555; 
+    padding: 10px; 
+    width: 80%; 
+}
+
+.controls { 
+    margin-bottom: 10px; 
+}
+
+#logTerminal { 
+    background: #000; 
+    height: 300px; 
+    overflow-y: scroll; 
+    border: 1px solid #333; 
+    padding: 10px; 
+    font-size: 12px; 
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+li { 
+    border-bottom: 1px solid #1a1a1a; 
+    padding: 5px 0; 
+}
+
+.warning { 
+    color: #ff0000; 
+    font-weight: bold; 
+    background: rgba(255,0,0,0.1); 
+}
+
+button { 
+    padding: 8px 15px; 
+    cursor: pointer; 
+    border: none; 
+    border-radius: 4px; 
+}
+
+#resetBtn { 
+    background: #444; 
+    color: white; 
+}
+
+#exportBtn { 
+    background: #007bff; 
+    color: white; 
+}

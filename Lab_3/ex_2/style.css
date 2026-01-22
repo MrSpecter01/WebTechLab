@@ -1,0 +1,59 @@
+body { 
+    font-family: sans-serif; 
+    background: #f8f9fa; 
+    padding: 20px; 
+}
+
+.shop-container { 
+    max-width: 500px; 
+    margin: auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.product-list { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+button { 
+    cursor: pointer; 
+    padding: 8px; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+}
+
+.cart-section { 
+    border-top: 2px solid #eee; 
+    padding-top: 20px; 
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+li { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+    background: #fafafa; 
+    padding: 10px; 
+    border-radius: 4px; 
+}
+
+.totals { 
+    margin-top: 20px; 
+    background: #e9ecef; 
+    padding: 15px; 
+    border-radius: 5px; 
+}
+
+#couponInput { 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    width: 60%; 
+}

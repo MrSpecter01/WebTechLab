@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab_3 - ex_4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="monitor-container">
+        <h2>Activity Monitor</h2>
+        
+        <div id="interactiveZone" class="zone">
+            <h3>Interactive Zone</h3>
+            <p>Click here, type here, or focus the input.</p>
+            <input type="text" id="testInput" placeholder="Type something...">
+            <button id="actionBtn">Click Me!</button>
+        </div>
+
+        <div class="controls">
+            <button id="resetBtn">Reset Log</button>
+            <button id="exportBtn">Export Text</button>
+        </div>
+
+        <div id="logTerminal">
+            <ul id="logList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

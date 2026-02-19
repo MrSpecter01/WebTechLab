@@ -1,0 +1,7 @@
+[
+  { "name": "Laptop", "price": 999, "category": "Electronics" },
+  { "name": "Smartphone", "price": 699, "category": "Electronics" },
+  { "name": "Coffee Maker", "price": 45, "category": "Home" },
+  { "name": "Desk Lamp", "price": 25, "category": "Office" },
+  { "name": "Backpack", "price": 50, "category": "Accessories" }
+]

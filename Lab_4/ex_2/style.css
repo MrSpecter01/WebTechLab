@@ -1,0 +1,28 @@
+body { font-family: sans-serif; padding: 40px; background: #f4f4f4; }
+
+.search-container { max-width: 500px; margin: auto; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#results { margin-top: 20px; }
+
+.product-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.product-card h3 { margin: 0 0 5px 0; color: #333; }
+.product-card p { margin: 2px 0; color: #666; font-size: 0.9em; }
+
+.error { color: #e74c3c; font-weight: bold; }
+.no-results { color: #666; font-style: italic; }

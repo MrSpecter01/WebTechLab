@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student CRUD - Fixed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Student Management System</h2>
+    
+    <div class="form-container">
+        <input type="hidden" id="studentId">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="dept" placeholder="Department">
+        <input type="number" id="marks" placeholder="Marks">
+        <button id="saveBtn">Save Student</button>
+    </div>
+
+    <p id="message"></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Dept</th>
+                <th>Marks</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

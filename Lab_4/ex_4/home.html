@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyless Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-box">
+        <h2>Free Weather (No Key)</h2>
+        <div class="search-row">
+            <input type="text" id="cityInput" placeholder="Enter city (e.g. London)">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="loader" class="hidden">Connecting to satellites...</div>
+        <div id="weatherDisplay" class="hidden">
+            <h3 id="cityName"></h3>
+            <p id="temp"></p>
+            <p id="condition">Current Weather</p>
+        </div>
+        <p id="errorMsg" class="error hidden"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

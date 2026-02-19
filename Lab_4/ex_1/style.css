@@ -1,0 +1,62 @@
+/* Basic Page Styling */
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h2{
+    text-align: center;
+}
+
+#registrationForm {
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+    border: 1px solid #c51616;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Input and Feedback Layout */
+input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#feedback {
+    font-size: 0.9em;
+    display: inline-block;
+    min-width: 150px;
+}
+
+/* Status States */
+.loading {
+    color: #666;
+    font-style: italic;
+}
+
+.available {
+    color: #2ecc71; /* Green */
+    font-weight: bold;
+}
+
+.taken {
+    color: #e74c3c; /* Red */
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

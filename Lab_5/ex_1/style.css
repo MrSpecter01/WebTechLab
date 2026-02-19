@@ -1,0 +1,6 @@
+body { font-family: sans-serif; padding: 20px; }
+.form-container { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #2c3e50; color: white; }
+.delete-btn { background: #e74c3c; color: white; border: none; padding: 5px; cursor: pointer; }

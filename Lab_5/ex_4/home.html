@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Inventory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Product Inventory Manager</h2>
+    
+    <div class="dashboard">
+        <div class="form-container">
+            <input type="hidden" id="prodId">
+            <input type="text" id="name" placeholder="Product Name">
+            <select id="category">
+                <option value="Electronics">Electronics</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Office">Office Supplies</option>
+            </select>
+            <input type="number" id="price" placeholder="Price">
+            <input type="number" id="stock" placeholder="Stock Qty">
+            <button onclick="saveProduct()">Save Product</button>
+        </div>
+
+        <div class="stats">
+            <strong>Total Inventory Value: $<span id="totalValue">0</span></strong>
+        </div>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="filterCategory" placeholder="Filter by category..." oninput="renderTable()">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="inventoryBody"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

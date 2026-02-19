@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XML Employee Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Employee Management (XML)</h2>
+    
+    <div class="form-container">
+        <input type="hidden" id="empId">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="dept" placeholder="Dept">
+        <input type="number" id="salary" placeholder="Salary">
+        <button onclick="saveEmployee()">Save Employee</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th><th>Name</th><th>Dept</th><th>Salary</th><th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="empTableBody"></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body { font-family: sans-serif; padding: 20px; background: #f8f9fa; }
+.dashboard { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.form-container { background: white; padding: 15px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+input, select { padding: 8px; margin-right: 5px; border: 1px solid #ccc; }
+
+table { width: 100%; border-collapse: collapse; background: white; }
+th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
+th { background: #34495e; color: white; }
+
+/* Conditional Formatting */
+.low-stock { background-color: #ffcccc !important; color: #cc0000; font-weight: bold; }
+.stats { font-size: 1.2em; color: #2c3e50; }
+.search-box { margin-bottom: 10px; }

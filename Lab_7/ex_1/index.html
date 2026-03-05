@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Note</h2>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="desc" placeholder="Description"></textarea>
+        <button class="btn-add" onclick="addNote()">Save Note</button>
+
+        <div id="notesList"></div>
+    </div>
+
+    <script>
+        const API = "http://localhost:3000/notes";
+
+        async function fetchNotes() {
+            const res = await fetch(API);
+            const notes = await res.json();
+            document.getElementById('notesList').innerHTML = notes.map(n => `
+                <div class="note-item">
+                    <h3>${n.title}</h3>
+                    <p><strong>${n.subject}</strong>: ${n.description}</p>
+                    <button class="btn-edit" onclick="updateNote('${n._id}')">Edit</button>
+                    <button class="btn-delete" onclick="deleteNote('${n._id}')">Delete</button>
+                </div>
+            `).join('');
+        }
+
+        async function addNote() {
+            const data = {
+                title: document.getElementById('title').value,
+                subject: document.getElementById('subject').value,
+                description: document.getElementById('desc').value
+            };
+            await fetch(API, { 
+                method: 'POST', 
+                headers: {'Content-Type': 'application/json'}, 
+                body: JSON.stringify(data) 
+            });
+            fetchNotes();
+        }
+
+        async function updateNote(id) {
+            const title = prompt("New Title:");
+            const description = prompt("New Description:");
+            if (title && description) {
+                await fetch(`${API}/${id}`, {
+                    method: 'PUT',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ title, description })
+                });
+                fetchNotes();
+            }
+        }
+
+        async function deleteNote(id) {
+            if(confirm("Delete this note?")) {
+                await fetch(`${API}/${id}`, { method: 'DELETE' });
+                fetchNotes();
+            }
+        }
+
+        fetchNotes();
+    </script>
+</body>
+</html>

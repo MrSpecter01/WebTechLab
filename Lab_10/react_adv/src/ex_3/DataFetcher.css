@@ -1,0 +1,34 @@
+.data-container {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.user-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 50px;
+  color: #007bff;
+}
+
+.error-msg {
+  color: #721c24;
+  background-color: #f8d7da;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
